@@ -7,11 +7,11 @@ interface ProfileProps {
 export function Profile({showProfileData = true}: ProfileProps) {
   return (
     <Flex align="center">
-      { !!showProfileData && (
+      { showProfileData && (
         <Box mr="4" textAlign="right">
           <Text>Daniel Vidal</Text>
           <Text color="gray.300" fontSize="small">
-            denion465
+            github.com/denion465
           </Text>
       </Box>
       )}
